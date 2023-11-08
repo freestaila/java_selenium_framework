@@ -30,9 +30,13 @@ POM with Page Factory Pattern
     │           ├───login_page
     │           └───main_page
     └───resources
-    └───github
+        └───github
 ```
 
 ## Run test
 
-Run .xml file for suite that should be executed. 
+Run .xml file for suite that should be executed.
+
+## Reports
+
+Reports will be added to \reports in root directory.
