@@ -9,10 +9,10 @@ import utilities.PageObject.BasePageObject;
 public class MainPage extends BasePageObject {
     public static final String MAIN_PAGE_PATH = "https://github.com/";
     @FindBy(xpath = "//html/body/div[1]/div[4]/main/div[1]/div[2]/div/div/div[2]/h1")
-    public static WebElement title;
+    private static WebElement title;
 
     @FindBy(xpath = "//html/body/div[1]/div[1]/header/div/div[2]/div/div/div/a")
-    public static WebElement signInButton;
+    private static WebElement signInButton;
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);

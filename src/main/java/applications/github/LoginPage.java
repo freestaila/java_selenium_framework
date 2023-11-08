@@ -9,16 +9,16 @@ import utilities.PageObject.BasePageObject;
 public class LoginPage extends BasePageObject {
     public static final String LOGIN_PAGE_PATH = "https://github.com/login";
     @FindBy(xpath = "//*[text()='Sign in to GitHub']")
-    public static WebElement title;
+    private static WebElement title;
     @FindBy(id = "login_field")
-    public static WebElement loginField;
+    private static WebElement loginField;
     @FindBy(id = "password")
-    public static WebElement passwordField;
+    private static WebElement passwordField;
     @FindBy(name = "commit")
-    public static WebElement signInButton;
+    private static WebElement signInButton;
 
     @FindBy(xpath = "//*[@id=\"js-flash-container\"]/div/div/button")
-    public static WebElement dissmisIncorrectUserDataMessageButton;
+    private static WebElement dissmisIncorrectUserDataMessageButton;
 
     public LoginPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
