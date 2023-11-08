@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="GitHub Suite">
+    <parameter name="driver"
+               value="chrome"/>
+
+    <test name="LoginPageTest">
+        <parameter name="user-data" value="github/user.login.properties"></parameter>
+        <classes>
+            <class name="applications.github.login_page.TC_LoginPage"/>
+        </classes>
+    </test>
+
+    <test name="OpenMainPage">
+        <classes>
+            <class name="applications.github.main_page.TC_MainPage">
+            </class>
+        </classes>
+    </test>
+
+    <test name="OpenLoginPageFromMainPage">
+        <classes>
+            <class name="applications.github.e2e_test.TC_MainLoginPageFlow">
+            </class>
+        </classes>
+    </test>
+</suite>
