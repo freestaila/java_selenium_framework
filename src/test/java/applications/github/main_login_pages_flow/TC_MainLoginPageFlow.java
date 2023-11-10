@@ -1,8 +1,7 @@
-package applications.github.e2e_test;
+package applications.github.main_login_pages_flow;
 
 import applications.github.LoginPage;
 import applications.github.MainPage;
-import config.Config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -12,7 +11,7 @@ import utilities.TestBase;
 import static applications.github.MainPage.MAIN_PAGE_PATH;
 
 public class TC_MainLoginPageFlow extends TestBase {
-    private static final Logger _logger = LogManager.getLogger(Config.class);
+    private static final Logger _logger = LogManager.getLogger(TC_MainLoginPageFlow.class);
 
     @Test
     public void isLoginPageIsOpenFromMainPage() {

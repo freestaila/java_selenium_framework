@@ -21,7 +21,7 @@
 
     <test name="OpenLoginPageFromMainPage">
         <classes>
-            <class name="applications.github.e2e_test.TC_MainLoginPageFlow">
+            <class name="applications.github.main_login_pages_flow.TC_MainLoginPageFlow">
             </class>
         </classes>
     </test>
